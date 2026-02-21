@@ -1574,6 +1574,8 @@ footer {
 
 @media (max-width: 768px) {
   .navbar {
+    position: sticky;
+    top: 0;
     padding: calc(0.75rem + env(safe-area-inset-top)) 12px 0.75rem;
     flex-direction: row;
     gap: 0.5rem;
@@ -1587,9 +1589,11 @@ footer {
     text-align: left;
     overflow-x: auto;
     white-space: nowrap;
-    width: 100%;
+    width: min(58vw, 360px);
     justify-content: flex-start;
     padding-bottom: 0.2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .navbar ul::-webkit-scrollbar {
@@ -1608,7 +1612,7 @@ footer {
   }
 
   .portfolio-container {
-    padding-top: 86px;
+    padding-top: 0;
   }
 
   #home,
@@ -1616,7 +1620,7 @@ footer {
   #skills,
   #projects,
   #contact {
-    scroll-margin-top: 98px;
+    scroll-margin-top: 110px;
   }
 
   .hero-section {

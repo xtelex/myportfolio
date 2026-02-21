@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import profilePic from '../pp.jpg';
 
 function App() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -438,7 +439,7 @@ function App() {
               ))}
             </div>
             <div className="profile-picture">
-              <img src="pp.jpg" alt="Profile" className="profile-avatar" />
+              <img src={profilePic} alt="Profile" className="profile-avatar" />
             </div>
           </div>
           <div className="hero-card">
